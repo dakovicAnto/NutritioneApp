@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E2F7FA">
+
+    <View
+        android:id="@+id/iconDrawableFood"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/amburga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:letterSpacing="0.07"
+        android:maxWidth="230dp"
+        android:maxLength="18"
+        android:maxLines="1"
+        android:text="@string/foodName"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconDrawableFood"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewIzmedjuAmburga"
+        android:layout_width="3dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="-2dp"
+        android:background="@drawable/moj_shape2"
+        android:backgroundTint="#01ACC3"
+        app:layout_constraintBottom_toBottomOf="@+id/iconDrawableFood"
+        app:layout_constraintEnd_toStartOf="@+id/tvFoodName"
+        app:layout_constraintStart_toEndOf="@+id/iconDrawableFood"
+        app:layout_constraintTop_toTopOf="@+id/iconDrawableFood" />
+
+    <View
+        android:id="@+id/viewArrow"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple_spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/viewIzmedjuAmburga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewIzmedjuAmburga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

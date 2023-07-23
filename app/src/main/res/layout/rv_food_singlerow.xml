@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvFoodSinfleRow"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="#E2F7FA">
+
+
+    <TextView
+        android:id="@+id/tvFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.1"
+        android:text="@string/fats"
+        android:textColor="@color/textViewSingleRow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/constraintSingleRow"
+        app:layout_constraintTop_toTopOf="@+id/constraintSingleRow" />
+
+    <TextView
+        android:id="@+id/tvPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/proteins"
+        android:textColor="@color/textViewSingleRow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvFat"
+        app:layout_constraintTop_toBottomOf="@+id/tvFat" />
+
+    <TextView
+        android:id="@+id/tvCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/carbs"
+        android:textColor="@color/textViewSingleRow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvPro"
+        app:layout_constraintTop_toBottomOf="@+id/tvPro" />
+
+    <TextView
+        android:id="@+id/tvFatValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/num_zero"
+        android:textColor="@color/textViewSingleRowValues"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvFat" />
+
+    <TextView
+        android:id="@+id/tvProValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/num_zero"
+        android:textColor="@color/textViewSingleRowValues"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvFatValue"
+        app:layout_constraintTop_toTopOf="@+id/tvPro" />
+
+    <TextView
+        android:id="@+id/tvCarbValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/num_zero"
+        android:textColor="@color/textViewSingleRowValues"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/tvProValue"
+        app:layout_constraintTop_toTopOf="@+id/tvCarb" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSingleRow"
+        android:layout_width="208dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/recycler_view_single_row"
+        android:elevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tvcalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/num_hundred"
+            android:textColor="@color/black"
+            android:textSize="57sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvCal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/calVal_SingleRow"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvcalValue"
+            app:layout_constraintStart_toEndOf="@+id/tvcalValue" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:letterSpacing="0.1"
+            android:text="@string/foodName_foodLibrary"
+            android:textAlignment="viewEnd"
+            android:textColor="#E2F7FA"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/viewLinija2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shapemoj"
+        android:backgroundTint="#01ACC3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

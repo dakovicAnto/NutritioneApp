@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_food_library">FoodLibrary</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="foodLibraryHeadline">Food Library</string>
+    <string name="foodLibrarySubHeadline">All values are based on 100 grams</string>
+    <!-- Common Numbers -->
+    <string name="num_hundred">100</string>
+    <string name="num_zero">0</string>
+
+    <!-- Random food name -->
+    <string name="foodName">Pork</string>
+
+    <!-- Spinner values -->
+    <string name="byDay">By day</string>
+    <string name="all">All</string>
+
+
+
+
+    <!--  Main_Activity -->
+    <string name="calories">kcal</string>
+    <string name="fats">fat</string>
+    <string name="proteins">pro</string>
+    <string name="carbs">crb</string>
+
+    <string name="foodLibrary">FOOD \nLIBRARY</string>
+    <string name="mealLibrary">MEAL \nLIBRARY</string>
+    <string name="enter_mass">enter mass here(g)</string>
+    <string name="amountPer">Amount Per </string>
+    <string name="amount">100 grams</string>
+
+    <string name="Calories">CALORIES</string>
+    <string name="Fat">FAT</string>
+    <string name="Protein">PROTEIN</string>
+    <string name="Carbs">CARBS</string>
+
+    <string name="Calories_Value">13429</string>
+    <string name="Fat_Value">1292</string>
+    <string name="Protein_Value">300.5</string>
+    <string name="Carbs_Value">29.2</string>
+
+    <string name="Nutritione">Nutritione</string>
+
+    <!--  Food Library -->
+    <string name="Food_Library">Food Library</string>
+    <string name="All_values_are">All values are based on a mass of 100g.</string>
+    <string name="Add_Food">ADD\nFOOD</string>
+
+    <!--  InfoMeal -->
+    <string name="mealName">DORUČAK</string>
+    <string name="meal_time">21:03</string>
+    <string name="meal_date">16/5/2023</string>
+
+    <string name="total">Total:</string>
+    <string name="meal_calories">Calories</string>
+    <string name="meal_fat">Fat</string>
+    <string name="meal_proteins">Proteins</string>
+    <string name="meal_carbs">Carbohydrates</string>
+
+    <string name="meal_calories_Values">1200</string>
+    <string name="meal_fat_Values">29</string>
+    <string name="meal_proteins_Values">28</string>
+    <string name="meal_carbs_Values">12.4</string>
+
+    <string name="meal_items">Meal\nitems(12):</string>
+
+    <!--  Meal Library -->
+    <string name="btnSelect">Select</string>
+
+    <!--  Meal Library -->
+    <string name="Create_new_meal">Create new meal</string>
+    <string name="Items_added">Items added</string>
+
+    <!--  insert_alertdialog -->
+    <string name="hint_FoodName">food name</string>
+    <string name="hint_cal_value">calorie value</string>
+    <string name="hint_fat_value">fat value</string>
+    <string name="hint_pro_value">protein value</string>
+    <string name="hint_carb_value">carb value</string>
+
+    <!--  meal_rv_singlerow -->
+    <string name="mealName_SingleRow">Meal1(4)</string>
+    <string name="calVal_SingleRow">kcal</string>
+    <string name="time_SingleRow">12:03</string>
+
+    <!--  rv_food_singlerow -->
+    <string name="foodName_foodLibrary">BANANA</string>
+
+    <!--  used at runtime INSERT DIALOG -->
+    <string name="discard_meal">DISCARD MEAL</string>
+    <string name="close_meal">CLOSE</string>
+    <string name="insert_meal">INSERT</string>
+
+    <!--  used at runtime FOOD_LIBRARY -->
+    <string name="close_food">CLOSE</string>
+    <string name="insert_food">INSERT</string>
+    <string name="insert_new_food">Insert new food</string>
+    <string name="delete">DELETE</string>
+    <string name="delteText">You are about to delete this item permanently</string>
+    <string name="are_you_sure">Are you sure?</string>
+
+
+
+
+
+</resources>

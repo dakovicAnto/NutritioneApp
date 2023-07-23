@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_meal">
+        <item>Dan</item>
+        <item>Svi</item>
+
+    </string-array>
+
+    <string-array name="spinner_meal2">
+        <item>All</item>
+        <item>By day</item>
+
+    </string-array>
+
+    <string-array name="months">
+        <item>Sij</item>
+        <item>Vel</item>
+        <item>Ozu</item>
+        <item>Tra</item>
+        <item>Svi</item>
+        <item>Lip</item>
+        <item>Srp</item>
+        <item>Kol</item>
+        <item>Ruj</item>
+        <item>Lis</item>
+        <item>Stu</item>
+        <item>Pro</item>
+    </string-array>
+</resources>

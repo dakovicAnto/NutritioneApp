@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hintStyle" >
+        <item name="android:textSize">13sp</item>
+        <item name="color">@color/purple_200</item>
+    </style>
+    <style  name="StilBottomLine">
+        <item name="colorControlNormal">#FF687173</item>
+        <item name="colorControlActivated">#00D419</item>
+        <item name="colorControlHighlight">#CC3636</item>
+
+    </style>
+</resources>

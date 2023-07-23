@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Random food name -->
+    <string name="foodName">Pork</string>
+
+    <!-- Spinner values -->
+    <string name="byDay">Dan</string>
+    <string name="all">Svi</string>
+
+
+
+
+    <!--  Main_Activity -->
+    <string name="calories">kcal</string>
+    <string name="fats">mst</string>
+    <string name="proteins">pro</string>
+    <string name="carbs">uhi</string>
+
+    <string name="foodLibrary">MOJA \nHRANA</string>
+    <string name="mealLibrary">MOJI \nOBROCI</string>
+    <string name="enter_mass">unjeti masu ovdje(g)</string>
+    <string name="amountPer">Kolicne po </string>
+    <string name="amount">100 grama</string>
+
+    <string name="Calories">KALORIJE</string>
+    <string name="Fat">MASTI</string>
+    <string name="Protein">PROTEINI</string>
+    <string name="Carbs">UHIDRATI</string>
+
+    <string name="Calories_Value">13429</string>
+    <string name="Fat_Value">1292</string>
+    <string name="Protein_Value">300.5</string>
+    <string name="Carbs_Value">29.2</string>
+
+    <string name="Nutritione">Nutritione</string>
+
+    <!--  Food Library -->
+    <string name="Food_Library">Moja Hrana</string>
+    <string name="All_values_are">Sve vrijednosti bazirane su na masi od 100g.</string>
+    <string name="Add_Food">DODAJ\nHRANU</string>
+
+    <!--  InfoMeal -->
+    <string name="mealName">DORUČAK</string>
+    <string name="meal_time">21:03</string>
+    <string name="meal_date">16/5/2023</string>
+
+    <string name="total">Ukupno:</string>
+    <string name="meal_calories">Kalorije</string>
+    <string name="meal_fat">Masti</string>
+    <string name="meal_proteins">Proteini</string>
+    <string name="meal_carbs">UHidrati</string>
+
+    <string name="meal_calories_Values">1200</string>
+    <string name="meal_fat_Values">29</string>
+    <string name="meal_proteins_Values">28</string>
+    <string name="meal_carbs_Values">12.4</string>
+
+    <string name="meal_items">sadrzi(12):</string>
+
+    <!--  Meal Library -->
+    <string name="btnSelect">Odaberi</string>
+
+    <!--  insert_alertdialog -->
+    <string name="Create_new_meal">Stvori novi obrok</string>
+    <string name="Items_added">Nutritienata dodano</string>
+
+    <string name="hint_FoodName">naziv</string>
+    <string name="hint_cal_value">kalorije</string>
+    <string name="hint_fat_value">masti</string>
+    <string name="hint_pro_value">proteini</string>
+    <string name="hint_carb_value">UH</string>
+
+    <!--  meal_rv_singlerow -->
+    <string name="mealName_SingleRow">Meal1(4)</string>
+    <string name="calVal_SingleRow">kcal</string>
+    <string name="time_SingleRow">12:03</string>
+
+    <!--  rv_food_singlerow -->
+    <string name="foodName_foodLibrary">BANANA</string>
+
+    <!--  used at runtime INSERT DIALOG -->
+    <string name="discard_meal">UKLONI OBROK</string>
+    <string name="close_meal">ZATVORI</string>
+    <string name="insert_meal">DODAJ</string>
+
+    <!--  used at runtime FOOD_LIBRARY -->
+    <string name="close_food">ZATVORI</string>
+    <string name="insert_food">DODAJ</string>
+    <string name="insert_new_food">Unesite novu nutritient</string>
+    <string name="delete">IZBRISI</string>
+    <string name="delteText">Upravo cete obrisati ovaj nutritient trajno</string>
+    <string name="are_you_sure">Jeste li sigurni?</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainDida"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2F7FA"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/viewValusLayout2"
+        android:layout_width="124dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_values_layout"
+        app:layout_constraintBottom_toBottomOf="@+id/viewValusLayout"
+        app:layout_constraintStart_toEndOf="@+id/viewValusLayout"
+        app:layout_constraintTop_toTopOf="@+id/viewValusLayout" />
+
+    <TextView
+        android:id="@+id/textViewCarbVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="234"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProVal"
+        app:layout_constraintTop_toTopOf="@+id/textViewCarb" />
+
+    <TextView
+        android:id="@+id/textViewProVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="22"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFatVal"
+        app:layout_constraintTop_toTopOf="@+id/textViewPro" />
+
+    <TextView
+        android:id="@+id/textViewFatVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="3933"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCalVal"
+        app:layout_constraintTop_toTopOf="@+id/textViewFat" />
+
+    <TextView
+        android:id="@+id/textViewCalVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="12973"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewValusLayout2"
+        app:layout_constraintTop_toTopOf="@+id/textViewCal" />
+
+    <Button
+        android:id="@+id/btnDiscardMeal"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_meal"
+        android:shadowDx="100"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddMealTo_DB"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddMealTo_DB" />
+
+    <View
+        android:id="@+id/viewIzmedju"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/shapemoj"
+        android:backgroundTint="#FF3345"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMyMeals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewMyMeals"
+        app:layout_constraintTop_toTopOf="@+id/viewMyMeals" />
+
+    <View
+        android:id="@+id/viewMyMeals"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/moj_shape2"
+        android:clickable="true"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewButton"
+        app:layout_constraintStart_toEndOf="@+id/viewButton"
+        app:layout_constraintTop_toTopOf="@+id/viewButton" />
+
+    <TextView
+        android:id="@+id/tvMyFridge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="@string/mealLibrary"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/viewMealIcon"
+        app:layout_constraintTop_toTopOf="@+id/tvMyFridge" />
+
+    <View
+        android:id="@+id/viewMealIcon"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/meal_icoon"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewButton2"
+        app:layout_constraintStart_toStartOf="@+id/viewMyMeals"
+        app:layout_constraintTop_toTopOf="@+id/viewButton2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintCaca"
+        android:layout_width="0dp"
+
+        android:layout_height="165dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/i"
+        android:elevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewButton">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/MyCustomTextInputStyle"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerMeal"
+            app:layout_constraintStart_toStartOf="@+id/spinnerMeal"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMeal"
+            app:startIconDrawable="@drawable/baseline_scale_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEt"
+                style="@style/MyCustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_mass"
+                android:inputType="number"
+                android:letterSpacing="0.05"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textSize="24sp"
+                android:theme="@style/StilBottomLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinnerMeal"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_start"
+            android:dropDownWidth="265dp"
+            android:dropDownHorizontalOffset="50dp"
+            android:dropDownVerticalOffset="50dp"
+            android:popupBackground="@drawable/spinner_dropdown_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="204dp" />
+
+    <View
+        android:id="@+id/viewButton"
+        android:layout_width="167dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shapemoj"
+        android:clickable="true"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewButton2"
+        android:layout_width="35dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/fridge_icon"
+        android:translationZ="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewButton"
+        app:layout_constraintStart_toStartOf="@+id/viewButton"
+        app:layout_constraintTop_toTopOf="@+id/viewButton" />
+
+    <View
+        android:id="@+id/viewValusLayout"
+        android:layout_width="170dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/shape_values2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintCaca" />
+
+    <TextView
+        android:id="@+id/textViewCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="@string/Carbs"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewPro"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPro" />
+
+    <TextView
+        android:id="@+id/textViewPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="@string/Protein"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewFat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFat" />
+
+    <TextView
+        android:id="@+id/textViewFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="@string/Fat"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewCal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCal" />
+
+    <TextView
+        android:id="@+id/tvMyFridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="@string/foodLibrary"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:translationZ="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewButton2"
+        app:layout_constraintStart_toEndOf="@+id/viewButton2"
+        app:layout_constraintTop_toTopOf="@+id/viewButton2" />
+
+    <Button
+        android:id="@+id/btnAddItemToMeal"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/addfoodtomeal"
+        android:enabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewValusLayout2" />
+
+    <TextView
+        android:id="@+id/textViewCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:text="@string/Calories"
+        android:textColor="#E2F7FA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewValusLayout"
+        app:layout_constraintStart_toStartOf="@+id/viewValusLayout"
+        app:layout_constraintTop_toTopOf="@+id/viewValusLayout" />
+
+    <TextView
+        android:id="@+id/textViewValuesPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"
+        android:text="@string/amountPer"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewValusLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintCaca"
+        app:layout_constraintTop_toBottomOf="@+id/constraintCaca" />
+
+    <TextView
+        android:id="@+id/tvGramAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="@string/amount"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewValuesPer"
+        app:layout_constraintStart_toEndOf="@+id/textViewValuesPer"
+        app:layout_constraintTop_toTopOf="@+id/textViewValuesPer" />
+
+    <View
+        android:id="@+id/btnAddMealTo_DB"
+        android:layout_width="80dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripplefirst"
+        android:clickable="true"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="@+id/btnAddItemToMeal"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddItemToMeal" />
+
+    <View
+        android:id="@+id/viewTocnik"
+        android:layout_width="0dp"
+
+        android:layout_height="76dp"
+        android:background="@drawable/conclude"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddMealTo_DB"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddMealTo_DB"
+        app:layout_constraintStart_toStartOf="@+id/btnAddMealTo_DB"
+        app:layout_constraintTop_toTopOf="@+id/btnAddMealTo_DB" />
+
+
+    <include
+        layout="@layout/bottom_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

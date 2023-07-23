@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval" >
+                    <solid android:color="#FF3345"/>
+                    <size android:width="30dp" android:height="30dp"/>
+
+                </shape>
+            </item>
+
+            <item android:drawable="@drawable/baseline_close_24" android:gravity="center"/>
+
+        </layer-list>
+    </item>
+
+</selector>

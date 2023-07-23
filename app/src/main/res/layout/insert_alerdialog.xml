@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDialog"
+    android:layout_width="match_parent"
+    android:layout_height="366dp"
+    android:paddingBottom="20dp">
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/hint_FoodName"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:textColorHint="#C8C8C8"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/hint_cal_value"
+        android:inputType="number"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColorHint="#C8C8C8"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <EditText
+        android:id="@+id/edFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/hint_fat_value"
+        android:inputType="number|numberDecimal"
+        android:maxLength="3"
+        android:textColorHint="#C8C8C8"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edCal"
+        app:layout_constraintTop_toBottomOf="@+id/edCal" />
+
+    <EditText
+        android:id="@+id/edPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/hint_pro_value"
+        android:inputType="number|numberDecimal"
+        android:maxLength="3"
+        android:textColorHint="#C8C8C8"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edFat"
+        app:layout_constraintTop_toBottomOf="@+id/edFat" />
+
+    <EditText
+        android:id="@+id/edCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/hint_carb_value"
+        android:inputType="number|numberDecimal"
+        android:maxLength="3"
+        android:textColorHint="#C8C8C8"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edPro"
+        app:layout_constraintTop_toBottomOf="@+id/edPro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

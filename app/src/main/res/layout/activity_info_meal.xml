@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MojaTamnoPlava"
+    tools:context=".meal.detail.InfoMeal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/meal_moreinfo"
+        android:elevation="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <View
+            android:id="@+id/linebelowMealName2"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="-12dp"
+            android:background="@color/MojaTamnoPlava"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvMealContains"
+            app:layout_constraintEnd_toEndOf="@+id/linebelowMealName"
+            app:layout_constraintStart_toStartOf="@+id/rvMealContains" />
+
+        <TextView
+            android:id="@+id/tvMealContains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_items"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvTotal"
+            app:layout_constraintTop_toBottomOf="@+id/tvCarbMealInfo" />
+
+        <TextView
+            android:id="@+id/tvCarbMealValueInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_carbs_Values"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvProMealValue"
+            app:layout_constraintTop_toTopOf="@+id/tvCarbMealInfo" />
+
+        <TextView
+            android:id="@+id/tvProMealValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_proteins_Values"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvFatMealValue"
+            app:layout_constraintTop_toTopOf="@+id/tvProMealInfo" />
+
+        <TextView
+            android:id="@+id/tvFatMealValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_fat_Values"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvCalMealValue"
+            app:layout_constraintTop_toTopOf="@+id/tvFatMealInfo" />
+
+        <TextView
+            android:id="@+id/tvCalMealValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_calories_Values"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvDateInfo"
+            app:layout_constraintTop_toTopOf="@+id/tvCalMealInfo" />
+
+        <TextView
+            android:id="@+id/tvCarbMealInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_carbs"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvProMealInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvProMealInfo" />
+
+        <TextView
+            android:id="@+id/tvProMealInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_proteins"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvCalMealInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvFatMealInfo" />
+
+        <TextView
+            android:id="@+id/tvFatMealInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_fat"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvCalMealInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvCalMealInfo" />
+
+        <TextView
+            android:id="@+id/tvDateInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/meal_date"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMealNameInfo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMealNameInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/mealName"
+            android:textAlignment="viewStart"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meal_time"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvDateInfo"
+            app:layout_constraintEnd_toEndOf="@+id/tvDateInfo" />
+
+        <View
+            android:id="@+id/linebelowMealName"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="-4dp"
+            android:layout_marginEnd="-4dp"
+            android:background="@color/MojaTamnoPlava"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvDateInfo"
+            app:layout_constraintStart_toStartOf="@+id/tvMealNameInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvMealNameInfo" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/total"
+            android:textColor="@color/material_dynamic_neutral_variant20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvMealNameInfo"
+            app:layout_constraintTop_toBottomOf="@+id/linebelowMealName" />
+
+        <TextView
+            android:id="@+id/tvCalMealInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/meal_calories"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/tvTotal"
+            app:layout_constraintTop_toTopOf="@+id/tvTotal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMealContains"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvCarbMealValueInfo"
+            app:layout_constraintStart_toEndOf="@+id/tvMealContains"
+            app:layout_constraintTop_toTopOf="@+id/tvMealContains" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textViewSingleRow">#01ACC3</color>
+    <color name="textViewSingleRowValues">#000000</color>
+    <color name="MojaPlava">#00BCD4</color>
+    <color name="MojaCrvena">#FF3345</color>
+    <color name="MojaTamnoPlava">#01ACC3</color>
+    <color name="MojaZelana">#00D419</color>
+    <color name="MojaSvijetloPlava">#E2F7FA</color>
+    <color name="MojaProzirna">#00E2F7FA</color>
+
+
+
+
+
+
+</resources>
